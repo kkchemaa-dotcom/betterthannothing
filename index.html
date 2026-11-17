@@ -22,26 +22,72 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <img class="icon" src="icon.png" alt="" width="96" height="96">
-  <h1>BetterThanNothing</h1>
-  <p class="sub">有做就好</p>
+<header class="top wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="40" height="40">BetterThanNothing</a>
+  <div class="lang" role="group" aria-label="Language / 語言">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="zh-Hant" aria-pressed="false">中文</button>
+  </div>
+</header>
 
-  <section lang="en">
-    <p>A quiet daily log for pull-ups, push-ups, sit-ups and squats. One tap per set.</p>
-    <h2>Support</h2>
-    <p>Questions or problems: email <a href="mailto:kkchemaa@gmail.com">kkchemaa@gmail.com</a>.</p>
-    <p><a href="privacy/">Privacy Policy</a></p>
+<main class="landing wrap" lang="en">
+  <section class="hero">
+    <h1>Better than nothing.</h1>
+    <p>A quiet daily log for pull-ups, push-ups, sit-ups and squats. Do a set, tap once.</p>
+    <!-- After release, the App Store badge and link go here. -->
   </section>
 
-  <hr>
-
-  <section lang="zh-Hant">
-    <p>引體向上、伏地挺身、仰臥起坐、深蹲的每日紀錄。做一組，點一下。</p>
-    <h2>支援</h2>
-    <p>有問題或建議，請寄信到 <a href="mailto:kkchemaa@gmail.com">kkchemaa@gmail.com</a>。</p>
-    <p><a href="privacy/">隱私權政策</a></p>
+  <section class="shots" aria-label="Screenshots">
+    <picture><source srcset="img/en-dark-today.png" media="(prefers-color-scheme: dark)"><img src="img/en-light-today.png" width="598" height="1300" alt="Today: one card per exercise"></picture>
+    <picture><source srcset="img/en-dark-history.png" media="(prefers-color-scheme: dark)"><img src="img/en-light-history.png" width="598" height="1300" alt="History: a 15-week heatmap" loading="lazy"></picture>
+    <picture><source srcset="img/en-dark-edit-set.png" media="(prefers-color-scheme: dark)"><img src="img/en-light-edit-set.png" width="598" height="1300" alt="Edit set: reps, date and note" loading="lazy"></picture>
+    <picture><source srcset="img/en-dark-settings.png" media="(prefers-color-scheme: dark)"><img src="img/en-light-settings.png" width="598" height="1300" alt="Settings: goals and reps per tap" loading="lazy"></picture>
   </section>
+
+  <section class="points">
+    <div><h2>One tap per set</h2><p>Tap an exercise and the set is logged. Undo or edit it right after.</p></div>
+    <div><h2>No streaks, no reminders</h2><p>History shows the days you did something. Goals are optional.</p></div>
+    <div><h2>Stays on your iPhone</h2><p>No account. The app collects no data.</p></div>
+  </section>
+
+  <footer class="foot">
+    <span>© 2026 BetterThanNothing</span>
+    <nav>
+      <a href="mailto:kkchemaa@gmail.com">Support</a>
+      <a href="privacy/">Privacy Policy</a>
+    </nav>
+  </footer>
 </main>
+
+<main class="landing wrap" lang="zh-Hant" hidden>
+  <section class="hero">
+    <h1>有做就好。</h1>
+    <p>引體向上、伏地挺身、仰臥起坐、深蹲的每日紀錄。做一組，點一下。</p>
+    <!-- 上架後在這裡放 App Store 徽章與連結。 -->
+  </section>
+
+  <section class="shots" aria-label="截圖">
+    <picture><source srcset="img/zh-Hant-dark-today.png" media="(prefers-color-scheme: dark)"><img src="img/zh-Hant-light-today.png" width="598" height="1300" alt="今天：每個動作一張卡片"></picture>
+    <picture><source srcset="img/zh-Hant-dark-history.png" media="(prefers-color-scheme: dark)"><img src="img/zh-Hant-light-history.png" width="598" height="1300" alt="紀錄：15 週熱度圖" loading="lazy"></picture>
+    <picture><source srcset="img/zh-Hant-dark-edit-set.png" media="(prefers-color-scheme: dark)"><img src="img/zh-Hant-light-edit-set.png" width="598" height="1300" alt="編輯：次數、日期與備註" loading="lazy"></picture>
+    <picture><source srcset="img/zh-Hant-dark-settings.png" media="(prefers-color-scheme: dark)"><img src="img/zh-Hant-light-settings.png" width="598" height="1300" alt="設定：目標與每次點擊次數" loading="lazy"></picture>
+  </section>
+
+  <section class="points">
+    <div><h2>點一下，記一組</h2><p>點一下動作卡片就記好了。記完可以馬上復原或修改。</p></div>
+    <div><h2>沒有連續天數，沒有提醒</h2><p>紀錄只顯示有做的日子。目標可有可無。</p></div>
+    <div><h2>只留在你的 iPhone</h2><p>不用帳號。App 不收集任何資料。</p></div>
+  </section>
+
+  <footer class="foot">
+    <span>© 2026 有做就好</span>
+    <nav>
+      <a href="mailto:kkchemaa@gmail.com">支援</a>
+      <a href="privacy/">隱私權政策</a>
+    </nav>
+  </footer>
+</main>
+
+<script src="lang.js"></script>
 </body>
 </html>
